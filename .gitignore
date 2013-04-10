@@ -1,10 +1,6 @@
-*.pyc
-.pydevproject
-.project
+*.py[co]
 *~
 dist/*
 MANIFEST
 build/*
 *egg*
-
-

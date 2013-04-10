@@ -10,13 +10,13 @@ def convert_readme():
         pass
     return open('README.txt').read()
 
-setup(name='mongodbforms',
-    version='0.1.5',
-    description="An implementation of django forms using mongoengine.",
-    author='Jan Schrewe',
-    author_email='jan@schafproductions.com',
-    url='http://www.schafproductions.com/projects/django-mongodb-forms/',
-    packages=['mongodbforms',],
+setup(name='mongodeform',
+    version='0.1',
+    description="An implementation of deform using mongoengine. Based on django-mongodbforms.",
+    author='Ivan Miric',
+    author_email='imiric@gmail.com',
+    url='https://github.com/imiric/mongodeform',
+    packages=['mongodeform',],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',
@@ -24,11 +24,10 @@ setup(name='mongodbforms',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Framework :: Django',
     ],
     license='New BSD License',
     long_description=convert_readme(),
     include_package_data=True,
     zip_safe=False,
-    install_requires=['setuptools', 'django>=1.3', 'mongoengine>=0.6',],
+    install_requires=['setuptools', 'deform>=0.9.7', 'mongoengine>=0.6',],
 )
